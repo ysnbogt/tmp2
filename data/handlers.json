@@ -1,0 +1,22 @@
+{
+    "battle": {
+        "image_path": "images/battle.png",
+        "dimensions_type": "battle"
+    },
+    "tap_to_proceed": {
+        "image_path": "images/tap_to_proceed.png",
+        "dimensions_type": "bottom"
+    },
+    "close": {
+        "image_path": "images/close.png",
+        "dimensions_type": "thanks"
+    },
+    "next": {
+        "image_path": "images/next.png",
+        "dimensions_type": "bottom"
+    },
+    "your_turn": {
+        "image_path": "images/your_turn.png",
+        "dimensions_type": "your_turn"
+    }
+}

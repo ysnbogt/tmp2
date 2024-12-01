@@ -1,0 +1,122 @@
+{
+    "close": {
+        "top": 845,
+        "left": 200,
+        "width": 25,
+        "height": 25
+    },
+    "battle_menu": {
+        "top": 720,
+        "left": 26,
+        "width": 24,
+        "height": 25
+    },
+    "concede_confirmation": {
+        "top": 590,
+        "left": 115,
+        "width": 135,
+        "height": 25
+    },
+    "concede": {
+        "top": 530,
+        "left": 140,
+        "width": 140,
+        "height": 30
+    },
+    "next": {
+        "top": 840,
+        "left": 140,
+        "width": 140,
+        "height": 30
+    },
+    "tap_to_proceed": {
+        "top": 840,
+        "left": 140,
+        "width": 140,
+        "height": 30
+    },
+    "battle": {
+        "top": 720,
+        "left": 135,
+        "width": 155,
+        "height": 40
+    },
+    "versus_error": {
+        "top": 640,
+        "left": 207,
+        "width": 1,
+        "height": 1
+    },
+    "server_error": {
+        "top": 640,
+        "left": 207,
+        "width": 1,
+        "height": 1
+    },
+    "interruption": {
+        "top": 610,
+        "left": 130,
+        "width": 1,
+        "height": 1
+    },
+    "battle_page": {
+        "top": 857,
+        "left": 295,
+        "width": 1,
+        "height": 1
+    },
+    "versus": {
+        "top": 710,
+        "left": 120,
+        "width": 1,
+        "height": 1
+    },
+    "random_match": {
+        "top": 710,
+        "left": 315,
+        "width": 1,
+        "height": 1
+    },
+    "start": {
+        "top": 448,
+        "left": 207,
+        "width": 1,
+        "height": 1
+    },
+    "matching_error": {
+        "top": 615,
+        "left": 207,
+        "width": 1,
+        "height": 1
+    },
+    "iphone_home": {
+        "top": 560,
+        "left": 360,
+        "width": 1,
+        "height": 1
+    },
+    "battle_defeats": {
+        "top": 615,
+        "left": 215,
+        "width": 1,
+        "height": 1
+    },
+    "date_changed": {
+        "top": 615,
+        "left": 215,
+        "width": 1,
+        "height": 1
+    },
+    "pack": {
+        "top": 875,
+        "left": 60,
+        "width": 1,
+        "height": 1
+    },
+    "social": {
+        "top": 875,
+        "left": 60,
+        "width": 1,
+        "height": 1
+    }
+}
