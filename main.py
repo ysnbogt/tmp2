@@ -21,7 +21,7 @@ class Handlers:
         uis_dimensions: dict[str, Dimensions],
         scaler: Scaler = None,
         delay: float = 1.0,
-        match_threshold: float = 0.75,
+        match_threshold: float = 0.7,
     ) -> None:
         self.uis_dimensions = uis_dimensions
         self.scaler = scaler
@@ -36,7 +36,7 @@ class Handlers:
         base_image_path: str,
         dimensions: Dimensions,
         callback: Callable | str,
-        wait_time: float = 0.1,
+        wait_time: float = 5,
     ) -> None:
         base_image = cv2.imread(base_image_path)
         while True:
@@ -50,10 +50,9 @@ class Handlers:
                         self.device_operator.random_tap(self.get_dimensions(callback))
                     else:
                         callback()
-                    self.sleep(wait_time)
                     break
-                time.sleep(1)
-            time.sleep(1)
+                time.sleep(wait_time)
+            time.sleep(wait_time)
 
     def concede_handler(self) -> None:
         def callback() -> None:
@@ -109,7 +108,7 @@ if __name__ == "__main__":
         handler = create_handler(
             image_path=data.get("image_path"),
             dimensions=DIMENSIONS[dimensions_type],
-            wait_time=data.get("wait_time", 0.1),
+            wait_time=data.get("wait_time", 5),
             ui_name=handler_name,
         )
         setattr(Handlers, f"{handler_name}_handler", handler)
