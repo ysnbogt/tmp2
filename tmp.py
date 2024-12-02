@@ -49,7 +49,9 @@ class ScreenCaptureApp:
         self.update_image()
 
     def create_controls(self):
-        tk.Label(self.controls_frame, text="Dimensions").grid(row=0, column=0, sticky="w")
+        tk.Label(self.controls_frame, text="Dimensions").grid(
+            row=0, column=0, sticky="w"
+        )
         tk.Label(self.controls_frame, text="Top").grid(row=1, column=0, sticky="w")
         self.top_entry = tk.Entry(self.controls_frame, width=10)
         self.top_entry.insert(0, str(self.top))
@@ -67,7 +69,9 @@ class ScreenCaptureApp:
         ).grid(row=5, column=0, pady=0, ipadx=39, sticky="w")
 
         tk.Label(self.controls_frame, text="").grid(row=6, column=0, sticky="w")
-        tk.Label(self.controls_frame, text="Dimensions Name").grid(row=7, column=0, sticky="w")
+        tk.Label(self.controls_frame, text="Dimensions Name").grid(
+            row=7, column=0, sticky="w"
+        )
         self.dimension_name_entry = tk.Entry(self.controls_frame, width=22)
         self.dimension_name_entry.grid(row=8, column=0)
         tk.Button(self.controls_frame, text="Save", command=self.save_dimensions).grid(

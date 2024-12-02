@@ -8,8 +8,13 @@ import numpy as np
 
 from device_operator import DeviceOperator
 from scaler import Scaler
-from settings import (BASE_DEVICE_BOUNDING_BOX, BASE_UIS_DIMENSIONS,
-                      DEVICE_BOUNDING_BOX, DIMENSIONS, HANDLERS_DATA)
+from settings import (
+    BASE_DEVICE_BOUNDING_BOX,
+    BASE_UIS_DIMENSIONS,
+    DEVICE_BOUNDING_BOX,
+    DIMENSIONS,
+    HANDLERS_DATA,
+)
 from sizes import Dimensions
 from utils import get_method_names, trim_image
 
@@ -20,15 +25,15 @@ class Handlers:
         device_operator: DeviceOperator,
         uis_dimensions: dict[str, Dimensions],
         scaler: Scaler = None,
-        delay: float = 1.0,
+        click_delay: float = 0.5,
         match_threshold: float = 0.7,
     ) -> None:
+        self.device_operator = device_operator
         self.uis_dimensions = uis_dimensions
         self.scaler = scaler
-        self.delay = delay
+        self.click_delay = click_delay
         self.match_threshold = match_threshold
 
-        self.device_operator = device_operator
         self.screenshot_image = None
 
     def make_worker(
@@ -45,7 +50,7 @@ class Handlers:
                     continue
                 target_image = trim_image(self.screenshot_image, dimensions)
                 if self.check_match(base_image, target_image):
-                    time.sleep(self.delay)
+                    time.sleep(self.click_delay)
                     if type(callback) is str:
                         self.device_operator.random_tap(self.get_dimensions(callback))
                     else:
