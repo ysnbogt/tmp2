@@ -13,10 +13,10 @@ Press <kbd>Command + Shift + 4</kbd> to display coordinates and specify the argu
 
 ### 2. Run `tmp.py` to Capture Comparison Images
 
-| Input Item | Description |
-| --- | --- |
-| Range | Specify the image range for comparison (`top, height`).<br>Choose a range with minimal movement, such as effects, and high information density to ensure uniqueness. |
-| Range Name | Save the range with a name. |
+| Input Item      | Description |
+| --------------- | ----------- |
+| Range           | Specify the image range for comparison (`top, height`).<br>Choose a range with minimal movement, such as effects, and high information density to ensure uniqueness. |
+| Range Name      | Save the range with a name. |
 | Range Selection | Select a previously saved range. |
 | Image File Name | Save the image of the selected range with a name. |
 
@@ -32,7 +32,10 @@ $ python3.11 tmp.py
 
 ### 3. Run `main.py`
 
-```zsj
+> [!TIP]
+> It is recommended to take a screenshot on the device and open the camera roll to check the operation.
+
+```zsh
 $ python3.11 main.py
 ```
 
