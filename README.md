@@ -1,8 +1,3 @@
-# 🚧 WIP 🚧
-
-> [!CAUTION]
-> NOT WORKING!
-
 ## Requirements
 
 - Unused Mac
